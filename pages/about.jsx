@@ -1,15 +1,12 @@
 import Head from "next/head";
 import React from "react";
 import Card from "../components/Card/Card";
-import { aboutData, clinets, works } from "../data/aboutData";
+import { about, clinets, works } from "../data/aboutData";
 import { whyChooseUs } from "../data/homeData";
 import { AboutStyle } from "../styles/about.style";
 import { ClientIcon } from "../svg";
 
 function About() {
-  const about = aboutData;
-  delete about.button;
-
   return (
     <AboutStyle>
       <Head>

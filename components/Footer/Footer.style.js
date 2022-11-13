@@ -127,8 +127,9 @@ export const MainFooterstyle = styled.article`
             display: block;
             padding: 0.5rem 0;
 
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             text-decoration: underline;
+            margin-bottom: 1rem;
           }
         }
       }
@@ -153,7 +154,8 @@ export const MainFooterstyle = styled.article`
 
         .icon {
           ${Flexbox({ justify: "center" })};
-          font-size: 1.5rem;
+
+          font-size: 2rem;
           margin-right: 1rem;
         }
       }

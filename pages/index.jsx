@@ -5,8 +5,13 @@ import Header from "../components/Header/Header";
 import Card from "../components/Card/Card";
 import SectionWrapper from "../components/SectionWrapper/SectionWrapper";
 
-import { aboutData } from "../data/aboutData";
-import { clients, ourProduct, services, whyChooseUs } from "../data/homeData";
+import {
+  clients,
+  ourProduct,
+  services,
+  whyChooseUs,
+  aboutUs,
+} from "../data/homeData";
 
 import { ClientsStyle, HomeStyle } from "../styles/home.style";
 import TimeLine from "../components/TimeLine/TimeLine";
@@ -44,7 +49,7 @@ export default function Home() {
       </Head>
       <Header />
       <Clients />
-      <Card cardType="horizontalCard" {...aboutData} />
+      <Card cardType="horizontalCard" {...aboutUs} />
       <SectionWrapper
         heading="Our Services"
         title="Automate Your Cloud Services"

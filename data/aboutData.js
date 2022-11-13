@@ -6,17 +6,13 @@ import {
   ServiceIcon,
 } from "../svg";
 
-export const aboutData = {
+export const about = {
   image: "/images/ilustrations/about-us-page.png",
   heading: "About Us",
   title: "Extravis is a global IT automation company",
   subHeading: "Our Story",
   description:
     "Extravis puts together a bunch of passionate minds to transform your visions into reality imparting an awesome digital experience for your users. From website design, development, scalable mobile apps to SaaS platforms, the solution we engineer accelerate efficiency and fuel growth for our clients.",
-  button: {
-    url: "/",
-    buttonText: "Explor Us",
-  },
 };
 
 export const clinets = [

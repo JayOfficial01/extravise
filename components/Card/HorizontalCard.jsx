@@ -32,16 +32,16 @@ function HorizontalCard(props) {
           {subHeading && <h3 className="sub-heading">{subHeading}</h3>}
           <p className="description">{description}</p>
 
-          {buttonText && (
-            <article className="button-wrapper">
+          <article className="button-wrapper">
+            {buttonText && (
               <PrimaryButton href={url}>
                 {buttonText}
                 <span>
                   <BsArrowRight />
                 </span>
               </PrimaryButton>
-            </article>
-          )}
+            )}
+          </article>
         </figcaption>
       </article>
     </HorizotalCardStyle>

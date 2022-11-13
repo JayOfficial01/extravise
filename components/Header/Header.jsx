@@ -24,13 +24,13 @@ function Header() {
           </p>
 
           <article className="button-wrapper">
-            <PrimaryButton href="#">
+            <PrimaryButton href="/about">
               Explore us
               <span>
                 <BsArrowRight />
               </span>
             </PrimaryButton>
-            <Link href="#" className="secondary-button">
+            <Link href="/contact" className="secondary-button">
               Contact us
             </Link>
           </article>

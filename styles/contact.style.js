@@ -23,6 +23,7 @@ export const ContactStyle = styled.section`
 
       .description {
         padding: 1rem 0;
+        line-height: 3.2rem;
       }
 
       .contact-list {
@@ -38,7 +39,7 @@ export const ContactStyle = styled.section`
 
             background: ${({ theme }) => theme.colors.lightGreenColor};
             color: ${({ theme }) => theme.colors.primaryColor};
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-right: 1rem;
             width: 5rem;
             height: 5rem;
