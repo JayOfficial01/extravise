@@ -73,6 +73,12 @@ export const FooterStyle = styled.footer`
         border-radius: 0.5rem;
 
         cursor: pointer;
+        transition: 0.3s all linear;
+
+        &:hover {
+          background: ${({ theme }) => theme.colors.primaryColor};
+          color: ${({ theme }) => theme.colors.whiteColor};
+        }
 
         @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
           width: 90%;

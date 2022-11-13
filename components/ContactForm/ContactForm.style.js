@@ -71,5 +71,11 @@ export const ContactFormStyle = styled.form`
     border: none;
 
     cursor: pointer;
+    transition: 0.3s all linear;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors.primaryColor};
+      color: ${({ theme }) => theme.colors.whiteColor};
+    }
   }
 `;

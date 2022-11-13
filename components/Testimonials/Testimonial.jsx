@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 import { testimonials } from "../../data/testimonials";
 import CustomerSurvayImage from "../../public/images/ilustrations/customer-survey.png";
@@ -41,51 +42,73 @@ function Testimonial() {
     nextArrow: <SliderNextButton />,
   };
 
+  const cardVariants = {
+    offscreen: {
+      y: 300,
+    },
+    onscreen: {
+      y: 50,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
     <TestimonialStyle>
-      <h3 className="heading">- Testimonials</h3>
-      <h2 className="title">Hear form our happy clients</h2>
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
+        <motion.div variants={cardVariants}>
+          <h3 className="heading">- Testimonials</h3>
+          <h2 className="title">Hear form our happy clients</h2>
 
-      <article className="testimonial-details">
-        <article className="testimonial-slider">
-          <article className="testimonials">
-            <Slider {...settings}>
-              {testimonials.map((testimonial, index) => {
-                const { quote, logo, name, designation } = testimonial;
-                return (
-                  <div className="slider" key={index}>
-                    <p className="client-saying">
-                      <span className="left">&ldquo;</span>
-                      {quote}
-                      <span className="right">&bdquo; </span>
-                    </p>
+          <article className="testimonial-details">
+            <article className="testimonial-slider">
+              <article className="testimonials">
+                <Slider {...settings}>
+                  {testimonials.map((testimonial, index) => {
+                    const { quote, logo, name, designation } = testimonial;
+                    return (
+                      <div className="slider" key={index}>
+                        <p className="client-saying">
+                          <span className="left">&ldquo;</span>
+                          {quote}
+                          <span className="right">&bdquo; </span>
+                        </p>
 
-                    <article className="published-by">
-                      <picture className="logo-wrapper">
-                        <Image
-                          src={logo}
-                          alt="Company Logo"
-                          width={100}
-                          height={50}
-                        />
-                      </picture>
+                        <article className="published-by">
+                          <picture className="logo-wrapper">
+                            <Image
+                              src={logo}
+                              alt="Company Logo"
+                              width={100}
+                              height={50}
+                            />
+                          </picture>
 
-                      <article className="publisher-details">
-                        <h3 className="name">{name}</h3>
-                        <p className="designation">{designation}</p>
-                      </article>
-                    </article>
-                  </div>
-                );
-              })}
-            </Slider>
+                          <article className="publisher-details">
+                            <h3 className="name">{name}</h3>
+                            <p className="designation">{designation}</p>
+                          </article>
+                        </article>
+                      </div>
+                    );
+                  })}
+                </Slider>
+              </article>
+            </article>
+
+            <picture className="testimonial-image">
+              <Image src={CustomerSurvayImage} alt="Customer Survey Image" />
+            </picture>
           </article>
-        </article>
-
-        <picture className="testimonial-image">
-          <Image src={CustomerSurvayImage} alt="Customer Survey Image" />
-        </picture>
-      </article>
+        </motion.div>
+      </motion.div>
     </TestimonialStyle>
   );
 }

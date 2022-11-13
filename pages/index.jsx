@@ -12,6 +12,7 @@ import {
   whyChooseUs,
   aboutUs,
 } from "../data/homeData";
+import { motion } from "framer-motion";
 
 import { ClientsStyle, HomeStyle } from "../styles/home.style";
 import TimeLine from "../components/TimeLine/TimeLine";
@@ -19,22 +20,44 @@ import Testimonial from "../components/Testimonials/Testimonial";
 import ContactSection from "../components/ContactSection/ContactSection";
 
 const Clients = () => {
+  const cardVariants = {
+    offscreen: {
+      y: 300,
+    },
+    onscreen: {
+      y: 50,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
     <ClientsStyle>
-      <h3 className="heading">Trusted by</h3>
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
+        <motion.div variants={cardVariants}>
+          <h3 className="heading">Trusted by</h3>
 
-      <article className="logos-wrapper">
-        {clients.map((client, index) => (
-          <Image
-            src={client}
-            alt="Client-Logo"
-            className="clinet-logo"
-            width={70}
-            height={60}
-            key={index}
-          />
-        ))}
-      </article>
+          <article className="logos-wrapper">
+            {clients.map((client, index) => (
+              <Image
+                src={client}
+                alt="Client-Logo"
+                className="clinet-logo"
+                width={70}
+                height={60}
+                key={index}
+              />
+            ))}
+          </article>
+        </motion.div>
+      </motion.div>
     </ClientsStyle>
   );
 };

@@ -160,6 +160,12 @@ export const NavbarStyle = styled.nav`
         border: 0.1rem solid ${({ theme }) => theme.colors.whiteColor};
 
         cursor: pointer;
+        transition: 0.3s all linear;
+
+        &:hover {
+          background: ${({ theme }) => theme.colors.primaryColor};
+          color: ${({ theme }) => theme.colors.whiteColor};
+        }
       }
     }
   }

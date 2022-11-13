@@ -56,9 +56,16 @@ export const PrimaryButton = styled(Link)`
 
   cursor: pointer;
 
+  &:hover {
+    span {
+      margin-left: 2rem;
+    }
+  }
+
   span {
     ${Flexbox({ justify: "center" })};
 
     margin-left: 1rem;
+    transition: 0.3s all linear;
   }
 `;

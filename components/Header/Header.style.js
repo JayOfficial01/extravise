@@ -56,7 +56,7 @@ export const HeaderStyle = styled.header`
         .secondary-button {
           ${Flexbox({ justify: "center" })};
 
-          padding: 1.1rem 2rem;
+          padding: 1.1rem 2.3rem;
           border-radius: 0.8rem;
           margin-left: 3rem;
           font-weight: 600;
@@ -66,6 +66,12 @@ export const HeaderStyle = styled.header`
           color: ${({ theme }) => theme.colors.primaryColor};
 
           cursor: pointer;
+          transition: 0.3s all linear;
+
+          &:hover {
+            background: ${({ theme }) => theme.colors.primaryColor};
+            color: ${({ theme }) => theme.colors.whiteColor};
+          }
         }
       }
     }
