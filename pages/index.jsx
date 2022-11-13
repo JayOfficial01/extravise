@@ -24,8 +24,8 @@ const Clients = () => {
             src={client}
             alt="Client-Logo"
             className="clinet-logo"
-            width={100}
-            height={75}
+            width={70}
+            height={60}
             key={index}
           />
         ))}

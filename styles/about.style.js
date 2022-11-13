@@ -48,6 +48,10 @@ export const AboutStyle = styled.section`
         .heading {
           margin: 1.5rem 0;
         }
+
+        .description {
+          line-height: 3.2rem;
+        }
       }
     }
   }

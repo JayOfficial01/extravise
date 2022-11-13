@@ -12,7 +12,7 @@ function CommonCard(props) {
         <h3 className="heading">{heading}</h3>
       </article>
 
-      <p className="description">{description}</p>
+      <p className="card-description">{description}</p>
 
       {url && <Link href={url}>Read more...</Link>}
     </CommonCardStyle>

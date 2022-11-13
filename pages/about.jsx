@@ -10,8 +10,6 @@ function About() {
   const about = aboutData;
   delete about.button;
 
-  console.log(about);
-
   return (
     <AboutStyle>
       <Head>

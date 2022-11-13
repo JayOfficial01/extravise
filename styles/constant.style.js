@@ -50,7 +50,7 @@ export const PrimaryButton = styled(Link)`
   box-shadow: 0px 9px 16px rgba(91, 91, 91, 0.16);
 
   padding: 1.3rem 2rem;
-  border-radius: 0.3rem;
+  border-radius: 0.8rem;
   border: none;
   font-size: 1.3rem;
 

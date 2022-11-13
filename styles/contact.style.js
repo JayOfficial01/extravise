@@ -90,7 +90,7 @@ export const ContactStyle = styled.section`
       max-width: 100%;
       height: auto;
       z-index: 1;
-      filter: grayscale(2);
+      filter: grayscale(3);
     }
   }
 `;

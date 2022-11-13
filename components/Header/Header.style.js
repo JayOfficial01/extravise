@@ -32,6 +32,7 @@ export const HeaderStyle = styled.header`
       .title {
         color: ${({ theme }) => theme.colors.blackColor};
         line-height: 9rem;
+        font-weight: 700;
 
         @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
           font-size: 4rem;
@@ -56,7 +57,7 @@ export const HeaderStyle = styled.header`
           ${Flexbox({ justify: "center" })};
 
           padding: 1.1rem 2rem;
-          border-radius: 0.3rem;
+          border-radius: 0.8rem;
           margin-left: 3rem;
           font-weight: 600;
           font-size: 1.3rem;
@@ -77,8 +78,8 @@ export const HeaderStyle = styled.header`
       }
 
       img {
-        width: 40rem;
-        height: 40rem;
+        width: 45rem;
+        height: auto;
       }
     }
   }

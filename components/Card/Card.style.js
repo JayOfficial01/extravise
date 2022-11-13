@@ -26,7 +26,7 @@ export const HorizotalCardStyle = styled.figure`
       ${Flexbox({ justify: "center" })};
 
       order: ${(props) => (props.dir ? 2 : 1)};
-      max-width: 35rem;
+
       justify-self: center;
 
       img {
@@ -64,6 +64,7 @@ export const HorizotalCardStyle = styled.figure`
       .description {
         color: ${({ theme }) => theme.colors.secondaryColor};
         margin-bottom: 3rem;
+        line-height: 3.2rem;
       }
 
       .button-wrapper {
@@ -100,10 +101,11 @@ export const CommonCardStyle = styled.figure`
     }
   }
 
-  .description {
+  .card-description {
     font-size: 1.5rem;
     padding-bottom: 2rem;
     color: ${({ theme }) => theme.colors.secondaryColor};
+    line-height: 3.2rem;
   }
 
   a {
@@ -165,8 +167,9 @@ export const TimelineCardStyle = styled.figure`
     }
 
     .card-description {
-      font-size: 2.4rem;
+      font-size: 1.6rem;
       color: ${({ theme }) => theme.colors.secondaryColor};
+      line-height: 3.2rem;
     }
   }
 
@@ -225,6 +228,10 @@ export const VerticalCardStyle = styled.figure`
 
     .heading {
       margin-bottom: 1rem;
+    }
+
+    .description {
+      line-height: 3.2rem;
     }
   }
 `;

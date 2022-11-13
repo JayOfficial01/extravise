@@ -118,7 +118,6 @@ export const TestimonialStyle = styled.article`
 
     .testimonial-image {
       display: block;
-      width: 30%;
       margin-left: 5rem;
 
       @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {

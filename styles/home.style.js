@@ -36,7 +36,9 @@ export const ClientsStyle = styled.section`
     }
 
     img {
-      max-width: 100%;
+      width: 100%;
+      object-fit: contain;
+      filter: grayscale(1);
     }
   }
 `;

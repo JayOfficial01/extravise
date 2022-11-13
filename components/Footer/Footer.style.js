@@ -137,6 +137,10 @@ export const MainFooterstyle = styled.article`
     .footer-contact-links {
       justify-self: flex-end;
 
+      @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
+        justify-self: flex-start;
+      }
+
       .heading {
         font-size: 2rem;
         margin-bottom: 2rem;

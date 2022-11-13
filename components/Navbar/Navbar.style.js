@@ -28,8 +28,8 @@ export const NavbarStyle = styled.nav`
       ${Flexbox};
 
       img {
-        width: 13.9rem;
-        height: 2rem;
+        max-width: 100%;
+        height: auto;
 
         @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
           width: 10rem;
@@ -120,6 +120,8 @@ export const NavbarStyle = styled.nav`
                 theme.breakPoints.mediumDevices}) {
               display: block;
               padding: 0.8rem 0;
+              font-size: 1.7rem;
+              margin-bottom: 2rem;
             }
 
             &:hover {
@@ -153,7 +155,8 @@ export const NavbarStyle = styled.nav`
         color: ${({ theme }) => theme.colors.whiteColor};
 
         border-radius: 0.4rem;
-        padding: 1rem;
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
         border: 0.1rem solid ${({ theme }) => theme.colors.whiteColor};
 
         cursor: pointer;
