@@ -1,5 +1,5 @@
 export const productHeader = {
-  image: "/images/ilustrations/product.png",
+  image: "/images/ilustrations/product.gif",
   title: "Our Product",
   description:
     "The main objective of our product is “See it all in one place“. Your servers, your clouds, your metrics, your data centers, your team. Everything in one single dashboard. One important aspect of Eagle monitoring is that it is proactive. Finding performance issues and bottlenecks proactively helps in identifying issues at the initial stage. Efficient proactive monitoring can prevent network downtime or failures.",

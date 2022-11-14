@@ -28,7 +28,7 @@ function VerticalCard(props) {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}
       >
-        <motion.div variants={cardVariants}>
+        <motion.div className="frammer-wrapper" variants={cardVariants}>
           <picture className="card-image">
             <Image src={image} alt={heading} width={250} height={250} />
           </picture>

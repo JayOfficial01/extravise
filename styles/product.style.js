@@ -2,6 +2,6 @@ import styled from "styled-components";
 
 export const ProductStyle = styled.section`
   .product-header {
-    padding-top: 10rem;
+    padding-top: 1rem;
   }
 `;

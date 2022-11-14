@@ -9,104 +9,110 @@ import {
 export const TestimonialStyle = styled.article`
   ${CustomContainer};
 
-  padding: 5rem 1.5rem;
+  padding: 5rem 1.5rem 15rem 1.5rem;
 
-  .heading {
-    color: ${({ theme }) => theme.colors.primaryColor};
-    font-size: 1.4rem;
-  }
+  .frammer-wrapper {
+    @media (max-width: ${({ theme }) => theme.breakPoints.smallDevices}) {
+      transform: translateY(0px) translateZ(0) !important;
+    }
 
-  .title {
-    color: ${({ theme }) => theme.colors.blackColor};
-  }
+    .heading {
+      color: ${({ theme }) => theme.colors.primaryColor};
+      font-size: 1.4rem;
+    }
 
-  .testimonial-details {
-    margin-top: 3rem;
-    width: 100%;
-    display: flex;
+    .title {
+      color: ${({ theme }) => theme.colors.blackColor};
+    }
 
-    .testimonial-slider {
-      width: 60%;
+    .testimonial-details {
+      margin-top: 3rem;
+      width: 100%;
+      display: flex;
 
-      @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
-        width: 100%;
-      }
+      .testimonial-slider {
+        width: 60%;
 
-      .testimonials {
-        border: 0.1rem solid ${({ theme }) => theme.colors.silverColor};
-        border-radius: 1rem;
-        padding: 3rem;
+        @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
+          width: 100%;
+        }
 
-        z-index: 4;
+        .testimonials {
+          border: 0.1rem solid ${({ theme }) => theme.colors.silverColor};
+          border-radius: 1rem;
+          padding: 3rem;
 
-        .slick-slider {
-          .slider {
-            padding: 2rem;
-            height: inherit;
+          z-index: 4;
 
-            .client-saying {
-              ${Positioning};
+          .slick-slider {
+            .slider {
+              padding: 2rem;
+              height: inherit;
 
-              padding: 3rem;
-              font-size: 2.2rem;
+              .client-saying {
+                ${Positioning};
 
-              @media (max-width: (${({ theme }) =>
-                  theme.breakPoints.smallDevices})) {
-                font-size: 2rem;
-              }
+                padding: 3rem;
+                font-size: 2.2rem;
 
-              span {
-                ${Positioning({ position: "absolute" })};
-
-                color: ${({ theme }) => theme.colors.garyColor};
-                font-size: 10rem;
-
-                &.left {
-                  top: -4rem;
-                  left: 0;
+                @media (max-width: (${({ theme }) =>
+                    theme.breakPoints.smallDevices})) {
+                  font-size: 2rem;
                 }
 
-                &.right {
-                  bottom: -4rem;
-                  right: 0;
-                }
-              }
-            }
+                span {
+                  ${Positioning({ position: "absolute" })};
 
-            .published-by {
-              ${Flexbox({ justify: "flex-start" })};
+                  color: ${({ theme }) => theme.colors.garyColor};
+                  font-size: 10rem;
 
-              margin-top: 4rem;
+                  &.left {
+                    top: -4rem;
+                    left: 0;
+                  }
 
-              .logo-wrapper {
-                display: block;
-                margin-right: 1.5rem;
-
-                img {
-                  max-width: 100%;
-                  height: auto;
+                  &.right {
+                    bottom: -4rem;
+                    right: 0;
+                  }
                 }
               }
 
-              .publisher-details {
-                margin-left: 1.5rem;
+              .published-by {
+                ${Flexbox({ justify: "flex-start" })};
 
-                .name {
-                  font-weight: 400;
-                  font-size: 1.8rem;
+                margin-top: 4rem;
 
-                  @media (max-width: (${({ theme }) =>
-                      theme.breakPoints.smallDevices})) {
-                    font-size: 1.5rem;
+                .logo-wrapper {
+                  display: block;
+                  margin-right: 1.5rem;
+
+                  img {
+                    max-width: 100%;
+                    height: auto;
                   }
                 }
 
-                .designation {
-                  color: ${({ theme }) => theme.colors.secondaryColor};
+                .publisher-details {
+                  margin-left: 1.5rem;
 
-                  @media (max-width: (${({ theme }) =>
-                      theme.breakPoints.smallDevices})) {
-                    font-size: 1rem;
+                  .name {
+                    font-weight: 400;
+                    font-size: 1.8rem;
+
+                    @media (max-width: (${({ theme }) =>
+                        theme.breakPoints.smallDevices})) {
+                      font-size: 1.5rem;
+                    }
+                  }
+
+                  .designation {
+                    color: ${({ theme }) => theme.colors.secondaryColor};
+
+                    @media (max-width: (${({ theme }) =>
+                        theme.breakPoints.smallDevices})) {
+                      font-size: 1rem;
+                    }
                   }
                 }
               }
@@ -114,19 +120,19 @@ export const TestimonialStyle = styled.article`
           }
         }
       }
-    }
 
-    .testimonial-image {
-      display: block;
-      margin-left: 5rem;
+      .testimonial-image {
+        display: block;
+        margin-left: 5rem;
 
-      @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
-        display: none;
-      }
+        @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
+          display: none;
+        }
 
-      img {
-        max-width: 100%;
-        height: auto;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
       }
     }
   }

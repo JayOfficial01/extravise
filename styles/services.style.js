@@ -11,7 +11,7 @@ export const ServicesStyle = styled.section`
     background: url("./images/bg/services-bg.png") no-repeat;
     background-position: top left;
 
-    padding: 15rem 0 5rem 0;
+    padding: 5rem 0 2rem 0;
   }
 
   .services {
@@ -19,15 +19,22 @@ export const ServicesStyle = styled.section`
     ${CustomContainer};
     ${CustomSpacing};
 
+    padding-bottom: 15rem;
+
     @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
       grid-template-columns: 1fr;
+      padding-bottom: 5rem;
     }
   }
 
   .services-timeline {
     background: url("./images/bg/timeline-bg.png") no-repeat;
     background-size: cover;
-    padding: 10rem 0;
+    padding: 10rem 0 15rem 0;
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
+      padding-bottom: 5rem;
+    }
 
     .timeline-container {
       ${CustomContainer};
@@ -42,6 +49,8 @@ export const ServicesStyle = styled.section`
   .technolagies-wrapper {
     ${CustomContainer};
     ${CustomSpacing};
+
+    padding: 5rem 1.5rem 0 1.5rem;
 
     .title {
       text-align: center;

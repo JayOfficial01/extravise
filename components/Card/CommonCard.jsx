@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { CommonCardStyle } from "./Card.style";
 
 function CommonCard(props) {
-  const { icon, heading, description, url } = props;
+  const { icon, heading, description, url, className } = props;
 
   const cardVariants = {
     offscreen: {
@@ -21,13 +21,13 @@ function CommonCard(props) {
     },
   };
   return (
-    <CommonCardStyle>
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
-      >
-        <motion.div variants={cardVariants}>
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
+      <motion.div variants={cardVariants}>
+        <CommonCardStyle className={className}>
           <article className="card-header">
             <span className="icon">{icon}</span>
             <h3 className="heading">{heading}</h3>
@@ -36,9 +36,9 @@ function CommonCard(props) {
           <p className="card-description">{description}</p>
 
           {url && <Link href={url}>Read more...</Link>}
-        </motion.div>
+        </CommonCardStyle>
       </motion.div>
-    </CommonCardStyle>
+    </motion.div>
   );
 }
 

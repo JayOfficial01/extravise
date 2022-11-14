@@ -163,8 +163,8 @@ export const NavbarStyle = styled.nav`
         transition: 0.3s all linear;
 
         &:hover {
-          background: ${({ theme }) => theme.colors.primaryColor};
-          color: ${({ theme }) => theme.colors.whiteColor};
+          background: ${({ theme }) => theme.colors.whiteColor};
+          color: ${({ theme }) => theme.colors.primaryColor};
         }
       }
     }

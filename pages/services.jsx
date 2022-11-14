@@ -2,8 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
-import Logo from "../public/images/tools/figma.png";
-
 import Card from "../components/Card/Card";
 import TimeLine from "../components/TimeLine/TimeLine";
 import { services, servicesData, technolagies } from "../data/services";

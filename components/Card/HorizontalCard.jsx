@@ -41,7 +41,7 @@ function HorizontalCard(props) {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.5 }}
       >
-        <motion.div variants={cardVariants}>
+        <motion.div variants={cardVariants} className="framer-wrapper">
           <article className="card-container">
             <picutre className="card-image">
               <Image src={image} alt="cardImagesss" width={500} height={500} />

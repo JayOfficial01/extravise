@@ -65,10 +65,18 @@ export const AboutStyle = styled.section`
       ${GirdBox({
         columns: "repeat(3, 1fr)",
         gap: "5rem",
-        align: "flex-start",
+        align: "stretch",
       })};
       ${CustomContainer};
       ${CustomSpacing};
+
+      padding-bottom: 7rem;
+
+      .perks {
+        &:hover {
+          background: unset;
+        }
+      }
 
       @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
         grid-template-columns: 1fr;

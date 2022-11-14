@@ -4,7 +4,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-import BannerImage from "../../public/images/ilustrations/banner-image.png";
+import BannerImage from "../../public/images/ilustrations/banner-image.gif";
 import { PrimaryButton } from "../../styles/constant.style";
 import { HeaderStyle } from "./Header.style";
 

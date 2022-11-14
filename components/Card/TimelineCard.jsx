@@ -26,7 +26,7 @@ function TimelineCard(props) {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}
       >
-        <motion.div variants={cardVariants}>
+        <motion.div className="frammer-wrapper" variants={cardVariants}>
           <figcaption>
             <h3 className="card-heading">{heading}</h3>
             <p className="card-description">{description}</p>

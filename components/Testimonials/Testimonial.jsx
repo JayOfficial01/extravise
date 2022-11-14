@@ -5,7 +5,7 @@ import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 import { testimonials } from "../../data/testimonials";
-import CustomerSurvayImage from "../../public/images/ilustrations/customer-survey.png";
+import CustomerSurvayImage from "../../public/images/ilustrations/customer-survey.gif";
 
 import {
   SliderNextButtonStyle,
@@ -63,7 +63,7 @@ function Testimonial() {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}
       >
-        <motion.div variants={cardVariants}>
+        <motion.div className="frammer-wrapper" variants={cardVariants}>
           <h3 className="heading">- Testimonials</h3>
           <h2 className="title">Hear form our happy clients</h2>
 

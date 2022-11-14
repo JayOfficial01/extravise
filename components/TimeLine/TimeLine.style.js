@@ -4,7 +4,13 @@ import { Positioning } from "../../styles/constant.style";
 export const TimeLineStyle = styled.section`
   ${Positioning};
 
-  display: flow-root;
+  .frammer-wrapper {
+    @media (max-width: ${({ theme }) => theme.breakPoints.smallDevices}) {
+      transform: translateY(0px) translateZ(0) !important;
+    }
+
+    display: flow-root;
+  }
 
   margin: 5rem 0;
   z-index: 1;

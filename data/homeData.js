@@ -15,7 +15,7 @@ export const clients = [
 ];
 
 export const aboutUs = {
-  image: "/images/ilustrations/about-us-page.png",
+  image: "/images/ilustrations/about-us-page.gif",
   heading: "About Us",
   title: "Extravis is a global IT automation company",
   subHeading: "Our Story",
@@ -74,7 +74,7 @@ export const services = [
 
 export const whyChooseUs = {
   direction: true,
-  image: "/images/ilustrations/earth.png",
+  image: "/images/ilustrations/earth.gif",
   heading: "Why Choose Us",
   title: "Our Treasure Comprises Our People, Vision & Values",
   subHeading: "Client-centric Approach",

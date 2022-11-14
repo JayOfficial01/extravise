@@ -34,6 +34,7 @@ export const ContactFormStyle = styled.form`
       }
 
       input {
+        flex: 1;
         border: none;
         padding: 1rem;
         background: none;

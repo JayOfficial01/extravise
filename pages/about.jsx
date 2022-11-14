@@ -42,7 +42,12 @@ function About() {
       <article className="how-we-work">
         <article className="works-container">
           {works.map((work, index) => (
-            <Card cardType="commonCard" {...work} key={index} />
+            <Card
+              cardType="commonCard"
+              {...work}
+              key={index}
+              className="perks"
+            />
           ))}
         </article>
       </article>

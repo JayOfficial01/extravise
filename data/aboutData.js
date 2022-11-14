@@ -7,7 +7,7 @@ import {
 } from "../svg";
 
 export const about = {
-  image: "/images/ilustrations/about-us-page.png",
+  image: "/images/ilustrations/about-us-page.gif",
   heading: "About Us",
   title: "Extravis is a global IT automation company",
   subHeading: "Our Story",

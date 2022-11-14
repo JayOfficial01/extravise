@@ -27,15 +27,17 @@ function TimeLine() {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}
       >
-        <motion.div variants={cardVariants}>
-          {timelineData.map((timeline, index) => (
-            <Card
-              cardType="timeLineCard"
-              {...timeline}
-              key={index}
-              count={index + 1}
-            />
-          ))}
+        <motion.div className="frammer-wrapper" variants={cardVariants}>
+          <article className="timelines">
+            {timelineData.map((timeline, index) => (
+              <Card
+                cardType="timeLineCard"
+                {...timeline}
+                key={index}
+                count={index + 1}
+              />
+            ))}
+          </article>
         </motion.div>
       </motion.div>
     </TimeLineStyle>

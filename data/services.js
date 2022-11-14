@@ -7,37 +7,37 @@ export const servicesData = {
 
 export const services = [
   {
-    image: "/images/ilustrations/network.png",
+    image: "/images/ilustrations/network.gif",
     heading: "Network Automation",
     description:
       "Network Performance Monitoring provides full visibility into every network component that makes up your on the cloud, and hybrid environments, with little to no overhead. By monitoring the performance of connections among your hosts, services, virtual private clouds, and other elements, you can quickly determine when your network is the root cause of any issue. ",
   },
   {
-    image: "/images/ilustrations/devops.png",
+    image: "/images/ilustrations/devops.gif",
     heading: "DevOps",
     description:
       "DevOps is a methodology designed to align development and operation teams to deliver high-quality software faster. Extravis offers end-to-end DevOps consulting services to help you achieve the increased frequency and reliability of software releases. We can help you leverage connected and automate the development, testing, and deployment of your apps.",
   },
   {
-    image: "/images/ilustrations/consultant.png",
+    image: "/images/ilustrations/consultant.gif",
     heading: "Cloud Consulting",
     description:
       "We’ve remained at the forefront of this cloud evolution, guiding our clients through the adoption of virtualization and converged infrastructure solutions toward the software-defined infrastructure model and all the benefits that come with cloud computing. Our experienced Cloud Consultants can help you determine the efficacy of and implement popular cloud solutions.",
   },
   {
-    image: "/images/ilustrations/robot.png",
+    image: "/images/ilustrations/robot.gif",
     heading: "Artificial Intelligence",
     description:
       "AI automates repetitive learning and discovery through data. Instead of automating manual tasks, AI performs frequent, high-volume, computerized tasks. And it does so reliably and without fatigue. Humans are still essential to set up the system and ask the right questions.",
   },
   {
-    image: "/images/ilustrations/blockchain.png",
+    image: "/images/ilustrations/blockchain.gif",
     heading: "Blockchain",
     description:
       "Blockchain is changing the way the world lives and works – but it’s only a means to an end, not the end itself. We can help you apply this technology to drive your transformation into the future. Blockchain is a technology that is yet to be explored. The scope is huge in a lot of industries to create custom software applications and enhance their efficiency.",
   },
   {
-    image: "/images/ilustrations/app.png",
+    image: "/images/ilustrations/app.gif",
     heading: "Custom App Development",
     description:
       "We work creatively to develop flexible and robust mobile apps that serve their purpose to the fullest no matter which industry they belong to. Customer engagement is the key to our success and we take feedback from our clients very seriously to deliver great results. That’s how we transform your ideas into great outcomes.",

@@ -11,7 +11,7 @@ export const HeaderStyle = styled.header`
   background-position: 100% -5rem;
   background-size: 53% 110%;
 
-  padding-top: 5rem;
+  padding-top: 3rem;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.mediumDevices}) {
     background-size: contain;
@@ -22,7 +22,7 @@ export const HeaderStyle = styled.header`
     ${CustomContainer};
     ${CustomSpacing};
 
-    margin-top: 10rem;
+    margin-top: 6rem;
 
     @media (max-width: ${({ theme }) => theme.breakPoints.tablets}) {
       ${GirdBox({ columns: "1fr" })};
